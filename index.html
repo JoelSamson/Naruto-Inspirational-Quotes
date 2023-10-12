@@ -1,19 +1,18 @@
-
-
-
-            <!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
     <title>Naruto Quotes</title>
 </head>
-<body>
-    <!-- Navbar section -->
+<body onload="naruto()">
+
+
     <nav>
-         <ul>
+        <ul>
           <li ><a href="#naruto"  onclick="changeWallpaper(1)"><img src="Photos/naruto-pfp.jpeg" alt="" srcset="" style="width: 70px;height: 70px;"></a></li>
           <li><a href="#sasuke"  onclick="changeWallpaper(2)"><img src="Photos/sasuke-pfp.jpeg" alt="" srcset="" style="width: 70px;height: 70px;"></a></li>
           <li><a href="#itachi"  onclick="changeWallpaper(3)"><img src="Photos/itachi-pfp.jpeg" alt="" srcset="" style="width: 70px;height: 70px;"></a></li>
@@ -26,16 +25,34 @@
           <li><a href="#sakura"  onclick="changeWallpaper(10)"><img src="Photos/sakura-pfp.jpeg" alt="" srcset="" style="width: 70px;height: 70px;"></a></li>
           <li><a href="#onoki"  onclick="changeWallpaper(11)"><img src="Photos/onoki-pfp.jpeg" alt="" srcset="" style="width: 70px;height: 70px;"></a></li>
         </ul>
-    </nav>
+      </nav>
+      <section id="people" class="home">
 
-    <!-- Quote display section -->
-    <section id="quote-section" class="home">
-        <div class="center">
-            <!-- Quote and character details will be displayed here -->
-        </div>
+        <div class="center"><div>
+
+
     </section>
 
-    <!-- Scripts at the end of the body for faster loading -->
-    <script src="script.js"></script>
+
+
+
+<!----
+<div class="nav">
+    <ul>
+        <li><a class="active" href="#home"  >Home</a></li>
+        <li><a href="#news" onclick="changeWallpaper(2)">News</a></li>
+        <li><a href="#contact" onclick="changeWallpaper(3)">Contact</a></li>
+        <li><a href="#about" onclick="changeWallpaper(4)">About</a></li>
+      </ul>
+    </div>-->
+      <!----
+    <div class="container">
+        <span><button onclick="changeWallpaper(1)" class="char">Naruto</button></span>
+        <span><button class="itachi char" onclick="changeWallpaper(2)">Itachi</button></span>
+        <span><button class="Sasuke char" onclick="changeWallpaper(3)">Sasuke</button></span>
+        <span><button class="Madarai char" onclick="changeWallpaper(4)">Madara</button></span>
+    </div>
+-->
+
 </body>
 </html>
